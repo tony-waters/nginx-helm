@@ -10,5 +10,6 @@ jobs:
       - run: ls -la ~
       - run: ls -la /
       - run: tree
+      - run: tree .
       - run: whoami
       - run: pwd
