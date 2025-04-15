@@ -17,7 +17,7 @@ jobs:
       - name: adding repo
         run: helm repo add talend-public https://talend.github.io/helm-charts-public/stable
       - name: searching for charts
-        run: helm search talend-public
+        run: helm search repo talend-public
 
 #      - run: ls -la ~
 #      - run: ls -la /
