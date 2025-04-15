@@ -11,7 +11,7 @@ jobs:
       - run: ls -la /
       - run: tree
       - run: tree .
-      - run: tree /home
+#      - run: tree /home
       - run: tree /home/runner
       - run: tree /home/runner/work
       - run: tree /home/runner/work/nginx-helm
