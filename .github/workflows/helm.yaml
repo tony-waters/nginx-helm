@@ -1,32 +1,20 @@
 name: helm build
 run-name: Being run by ${{ github.actor }}
-on: [push]
+on: [push] # just for testing, should be some form of [release]
 jobs:
   helm-build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
         uses: actions/checkout@v2
-#      - run: echo "Hello World!"
       - run: ls -la
       - name: install using helm
         run: helm package .
       - run: ls -la
-      - name: push to registry
-        run: echo "Pushing to registry"
       - name: adding repo
         run: helm repo add talend-public https://talend.github.io/helm-charts-public/stable
       - name: searching for charts
         run: helm search repo talend-public
+#      - name: push to registry
+#        run: echo "Pushing to registry"
 
-#      - run: ls -la ~
-#      - run: ls -la /
-#      - run: tree
-#      - run: tree .
-##      - run: tree /home
-#      - run: tree /home/runner
-#      - run: tree /home/runner/work
-#      - run: tree /home/runner/work/nginx-helm
-#      - run: tree /home/runner/work/nginx-helm/nginx-helm
-#      - run: whoami
-#      - run: pwd
