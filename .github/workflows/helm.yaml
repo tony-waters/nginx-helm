@@ -11,10 +11,10 @@ jobs:
       - run: ls -la /
       - run: tree
       - run: tree .
-      - run: /home
-      - run: /home/runner
-      - run: /home/runner/work
-      - run: /home/runner/work/nginx-helm
-      - run: /home/runner/work/nginx-helm/nginx-helm
+      - run: tree /home
+      - run: tree /home/runner
+      - run: tree /home/runner/work
+      - run: tree /home/runner/work/nginx-helm
+      - run: tree /home/runner/work/nginx-helm/nginx-helm
       - run: whoami
       - run: pwd
