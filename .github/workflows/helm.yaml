@@ -5,16 +5,18 @@ jobs:
   helm-build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World!"
-      - run: ls -la
-      - run: ls -la ~
-      - run: ls -la /
-      - run: tree
-      - run: tree .
-#      - run: tree /home
-      - run: tree /home/runner
-      - run: tree /home/runner/work
-      - run: tree /home/runner/work/nginx-helm
-      - run: tree /home/runner/work/nginx-helm/nginx-helm
-      - run: whoami
-      - run: pwd
+      - name: checkout code
+        uses: actions/checkout@v2
+#      - run: echo "Hello World!"
+#      - run: ls -la
+#      - run: ls -la ~
+#      - run: ls -la /
+#      - run: tree
+#      - run: tree .
+##      - run: tree /home
+#      - run: tree /home/runner
+#      - run: tree /home/runner/work
+#      - run: tree /home/runner/work/nginx-helm
+#      - run: tree /home/runner/work/nginx-helm/nginx-helm
+#      - run: whoami
+#      - run: pwd
