@@ -9,6 +9,8 @@ jobs:
         uses: actions/checkout@v2
 #      - run: echo "Hello World!"
       - run: ls -la
+      - name: install using helm
+        run: helm upgrade --install my-app .
 #      - run: ls -la ~
 #      - run: ls -la /
 #      - run: tree
