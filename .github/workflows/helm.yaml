@@ -11,6 +11,5 @@ jobs:
       - run: ls -la /
       - run: tree
       - run: tree .
-      - run: tree /
       - run: whoami
       - run: pwd
