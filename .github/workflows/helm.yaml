@@ -15,6 +15,8 @@ jobs:
         run: helm repo add talend-public https://talend.github.io/helm-charts-public/stable
       - name: searching for charts
         run: helm search repo talend-public
+      - name: access own helm repository
+        run: helm repo add tw https://tony-waters.github.io/helm-charts/
       - name: push to registry
         run: echo "Pushing to registry"
 
