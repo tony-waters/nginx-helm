@@ -1,0 +1,8 @@
+name: helm build
+run-name: Being run by ${{ github.actor }}
+on: [push]
+jobs:
+  helm-build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World!"
