@@ -10,7 +10,7 @@ jobs:
 #      - run: echo "Hello World!"
       - run: ls -la
       - name: install using helm
-        run: helm upgrade --install my-app .
+        run: helm package .
 #      - run: ls -la ~
 #      - run: ls -la /
 #      - run: tree
