@@ -6,4 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World!"
+      - run: ls -la
       - run: ls -la /
+      - run: whoami
