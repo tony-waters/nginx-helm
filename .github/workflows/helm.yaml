@@ -11,6 +11,10 @@ jobs:
       - run: ls -la
       - name: install using helm
         run: helm package .
+      - run: ls -la
+      - name: push to registry
+        run: echo "Pushing to registry"
+
 #      - run: ls -la ~
 #      - run: ls -la /
 #      - run: tree
