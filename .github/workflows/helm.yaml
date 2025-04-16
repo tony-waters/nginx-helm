@@ -22,5 +22,5 @@ jobs:
       - name: searching for own charts
         run: helm search repo tw
       - name: push to registry
-        run: helm push nginx tw
+        run: helm push nginx tw --debug
 
