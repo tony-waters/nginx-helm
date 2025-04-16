@@ -16,7 +16,7 @@ jobs:
 #      - name: searching for charts
 #        run: helm search repo talend-public
       - name: access own helm repository
-        run: helm repo add tw https://tony-waters.github.io/helm-charts/
+        run: helm repo add --username=${{ secrets.GIT_USERNAME }} --password=${{ secrets.GIT_PASSWORD }}tw https://tony-waters.github.io/helm-charts/
       - name: searching for own charts
         run: helm search repo tw
       - name: push to registry
