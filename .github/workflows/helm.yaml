@@ -10,6 +10,8 @@ jobs:
       - run: ls -la
       - name: install using helm
         run: helm package .
+      - name: which helm version
+        run: helm version
 #      - run: ls -la
 #      - name: adding repo
 #        run: helm repo add talend-public https://talend.github.io/helm-charts-public/stable
